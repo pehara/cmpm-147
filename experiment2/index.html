@@ -2,7 +2,7 @@
 <html>
 <head>
 	<!-- This title is used for tabs and bookmarks -->
-	<title>Experiment X - Subject/Topic</title>
+	<title>Experiment 2 - Living Impressions</title>
 
 	<!-- Use UTF character set, a good idea with any webpage -->
 	<meta charset="UTF-8" />
@@ -23,21 +23,34 @@
 	<!-- Link to javascript files - DEFER waits until all elements are rendered -->
     <script type="text/javascript" src="../js/site.js" DEFER></script>
 	<!-- Use me for a JavaScript OOP Project -->
-	<script type="text/javascript" src="./js/project.js" DEFER></script>
+	<!-- <script type="text/javascript" src="./js/project.js" DEFER></script> -->
 	<!-- Use me for a p5.js project -->
-	<script type="text/javascript" src="./js/sketch.js" DEFER></script>
+	<!-- <script type="text/javascript" src="./js/sketch.js" DEFER></script> -->
 </head>
 <body>
 	<!-- Style this page by changing the CSS in ../css/site.css or css/experiment.css -->
 	<main id="content">
 		<section>
 
-			<h1>Experiment X - Subject/Topic</h1>
+			<h1>Experiment 2 - Living Impressions</h1>
 
 			<div class="minor-section">
+
 				<div id="canvas-container">
 					<!-- canvas will be added here -->
+					<!-- Copy and Paste Me -->
+					<div class="glitch-embed-wrap" style="height: 720px; width: 105%;">
+						<iframe
+						src="https://glitch.com/embed/#!/embed/snowy-landscape?path=index.html&previewSize=100"
+						title="snowy-landscape on Glitch"
+						allow="geolocation; microphone; camera; midi; encrypted-media; xr-spatial-tracking; fullscreen"
+						allowFullScreen
+						style="height: 85%; width: 100%; border: 0;">
+						</iframe>
+					</div>
 				</div>
+
+
                 <div class="fullscreen-box">
                     <button id="fullscreen">Fullscreen</button>
                 </div>
@@ -45,17 +58,18 @@
 
 			<div class="minor-section">
 				<h2>Description</h2>
-				<p>What are you trying to acomplish with this experiment?</p>
+				<p>In this experiment, I tried to generate a realistic snowy scene. I tried to mimic the dynamic characteristics of nature in real life. I wanted the snow to be moving, the trees to slowly drift and for it feel sort of dream like.</p>
 			</div>
 
 			<div class="minor-section">
 				<h2>Technical</h2>
-				<p>Describe in detail what you did technically and how it works?</p>
+				<p>This project uses the p5.js package to build and control visual objects on an HTML canvas. It helps with the functions of rendering the sky gradient, mountains, forests, and snow layers. The sky gradient is made out of blended rectangles, mountains are rendered as randomly shaped polygons with the beginShape() and vertex() methods, trees are illustrated using triangles that are randomly placed throughout the canvas and vary in size and finally I use ellipses to replicate snowflakes.I also have user input by using mouse movement.
+				</p>
 			</div>
 
 			<div class="minor-section">
 				<h2>Reflection</h2>
-				<p>Each person that worked on the code should reflect on the process, the difficulties, and the successes of the experiment.</p>
+				<p>I did all the work of the project by myself, I did have the aid of some online resources when looking up the library for creating my scene as well as certain effects. I think I did a great job at implementing the work into something I can confidently say looks good. I did want to have more diversity with my trees like random colors and shapes however I struggled with my implementation of that so I decided to just revert to a simple triangle. I would say my high, however, was my implementation of the gradient because it went fairly smoothly and had a really nice outcome in my opinion.				</p>
 			</div>
 
 		</section>
