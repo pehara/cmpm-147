@@ -1,57 +1,46 @@
-h1, h2 {
-  margin: 0;
-  padding: 0;
-  /* font-size: 1.2em; */
-  font-weight: lighter;
+#links a {
+  text-align: center;
+  color: #ddd2d0;
+  /* background: transparent url('../img/bread_title.png')  50% no-repeat; */
 }
 
 #content {
-  width: calc(100% - 30px);
-  margin: 10px;080;
-  padding: 10px;
-  border: solid 1px #808;
-  font-family: sans-serif;
+  text-align: center;
+  margin: 30px;
+  padding: 100px;
+  /* border: solid 1px rgb(70, 36, 30); */
+  /* background-color: rgb(64, 31, 24); Set the background color to brown */
+  /* background-image: url("../img/background.jpg"); */
+  color: #ddd2d0;
 }
 
 .minor-section {
-  margin: 10px;
+  text-align: center;
   padding: 10px;
-  border: solid 1px #A0A0A0;
-  border-radius: 10px;
+  /* border: solid 1px rgb(124, 47, 24); */
+  /* background: transparent url('../img/bread_title.png')  center 200% no-repeat; */
+  color: rgb(245, 237, 236); /* Set the text color to cream */
 }
 
-.minor-section h2 {
-  font-size: 1.2em;
+.toast-section {
+  /* background: transparent url('../img/bread_title.png')  50% no-repeat; */
 }
 
-/* Set the image to be responsive */
-.image-wrapper img {
-  max-width: 100%;
-  height: auto;
+html, body {
+  margin: 0;
+  padding: 0;
 }
 
-/* Set the canvas element to be the full size of the container */
-canvas {
-  width: 100%;
-  height: 100%;
-}
-
-.fullscreen-box {
+body {
+  /* background-image: url('../img/background.jpg'); */
+  background-color: rgb(119, 72, 48);
+  background-size: cover;
+  background-position: center;
+  /* background-repeat: no-repeat; */
   display: flex;
-  justify-content: flex-end; /* Aligns the button to the right */
-  margin-top: 0.25em;
-}
-
-.fullscreen-box button {
-  font-size: 0.6em;
-}
-
-body.is-fullscreen #canvas-container {
-  position: fixed; /* Use 'fixed' instead of 'absolute' to ensure it covers the entire screen */
-  top: 0;
-  left: 0; /* Add 'left: 0' to align it properly to the top-left corner */
-  width: 100vw !important;
-  height: 100vh !important;
-  margin: 0; /* Remove any default margins */
-  z-index: 1000; /* Ensure it's above other content */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 1in;
 }

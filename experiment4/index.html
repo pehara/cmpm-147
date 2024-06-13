@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- This title is used for tabs and bookmarks -->
+    <title>Experiment 4 - Infinite Worlds</title>
+
+    <!-- Use UTF character set, a good idea with any webpage -->
+    <meta charset="UTF-8" />
+    <!-- Set viewport so page remains consistently scaled w narrow devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Include CSS file, including a site-wide CSS and for this particular page -->
+    <link rel="stylesheet" type="text/css" href="../css/site.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- Load jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        crossorigin="anonymous"></script>
+
+    <!-- Link to javascript files - DEFER waits until all elements are rendered -->
+    <script type="text/javascript" src="../js/site.js" defer></script>
+    <!-- Use me for a JavaScript OOP Project -->
+    <script type="text/javascript" src="./js/project.js" defer></script>
+    <!-- Use me for a p5.js project -->
+    <script type="text/javascript" src="./js/sketch.js" defer></script>
+</head>
+<body>
+    <!-- Style this page by changing the CSS in ../css/site.css or css/experiment.css -->
+    <main id="content">
+        <section>
+
+            <h1>Experiment 4 - Infinite Worlds</h1>
+
+            <div class="minor-section">
+                <div id="canvas-container">
+                    <!-- canvas will be added here -->
+					
+					<!-- Copy and Paste Me -->
+					<div class="glitch-embed-wrap" style="height: 420px; width: 100%;">
+						<iframe
+						src="https://glitch.com/embed/#!/embed/snowy-infinite-worldz?path=my_world.js&previewSize=100"
+						title="snowy-infinite-worldz on Glitch"
+						allow="geolocation; microphone; camera; midi; encrypted-media; xr-spatial-tracking; fullscreen"
+						allowFullScreen
+						style="height: 100%; width: 100%; border: 0;">
+						</iframe>
+					</div>
+
+                </div>
+            </div>
+
+            <div class="minor-section">
+                <h2>Description</h2>
+                <p>This experiment aims to create an infinite snowy world with variations in terrain and interactive elements.</p>
+            </div>
+
+            <div class="minor-section">
+                <h2>Technical</h2>
+                <p>This experiment uses Perlin noise to generate terrain height values. Based on these values, different colors represent snowy plains, hills, and mountains. Icy lakes are randomly added to the terrain within a specific height range. Each tile reacts to clicks, changing its appearance.</p>
+                <p>Here's how it works:</p>
+                <ul>
+                    <li>A world seed is defined based on the input key using XXH hashing.</li>
+                    <li>Each tile's height is determined using Perlin noise.</li>
+                    <li>Different colors are assigned for snowy terrain based on height values.</li>
+                    <li>Icy lakes are randomly added within a specific height range.</li>
+                    <li>Clicking on tiles changes their appearance.</li>
+                </ul>
+            </div>
+
+            <div class="minor-section">
+                <h2>Reflection</h2>
+                <p>For this project I was the sole contributor, I was able to generate this concept through the use of online resources and the code given to us. Reflectoing on my work I think I did a good job implementing a infinite snowy landscape that is pretty similar to real life. One of my lows of the experiment would be figuring out how to make a 3D terrain, I included a lot of my hurdles this time because I encountered a lot of challenges but I was able to ovecom them. My highw as when everything came together and my scene looked like what I had been envisioning. </p>
+            </div>
+
+        </section>
+        <nav id="links" class="minor-section">
+            <!-- Put link back to homepage here. -->
+            <ul>
+                <li><p href="../index.html">Home</p></li>
+            </ul>
+        </nav>
+    </main>
+
+    
+    <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- This title is used for tabs and bookmarks -->
+	<title>Experiment 3 - Alternate Worlds </title>
+
+	<!-- Use UTF character set, a good idea with any webpage -->
+	<meta charset="UTF-8" />
+	<!-- Set viewport so page remains consistently scaled w narrow devices -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- Include CSS file, including a site-wide CSS and for this particular page -->
+	<link rel="stylesheet" type="text/css" href="../css/site.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<!-- Load jQuery library -->
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        crossorigin="anonymous"></script>
+	<!-- Load p5.js library -->
+	<script src="https://cdn.jsdelivr.net/npm/p5@1.9.2/lib/p5.js"></script>
+
+	<!-- Link to javascript files - DEFER waits until all elements are rendered -->
+    <script type="text/javascript" src="../js/site.js" DEFER></script>
+	<!-- Use me for a JavaScript OOP Project -->
+	<script type="text/javascript" src="./js/project.js" DEFER></script>
+	<!-- Use me for a p5.js project -->
+	<!-- <script type="text/javascript" src="./js/sketch.js" DEFER></script> -->
+    
+    <!-- Add CSS for styling -->
+    <style>
+        #canvas-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px; 
+            margin-bottom: 20px; 
+        }
+        #content section {
+            margin-bottom: 20px; 
+        }
+    </style>
+</head>
+<body>
+	<!-- Style this page by changing the CSS in ../css/site.css or css/experiment.css -->
+	<main id="content">
+		<section>
+
+			<h1>Experiment 3 - Alternate Worlds</h1>
+
+			<div class="minor-section">
+				<div id="canvas-container">
+					<iframe src="https://overworld---p.glitch.me" frameborder="0" scrolling="yes" width="600" height="600"></iframe>
+                    <iframe src="https://dungeon---p.glitch.me" frameborder="0" scrolling="yes" width="600" height="600"></iframe>
+				</div>
+                <!-- <div class="fullscreen-box">
+                    <button id="fullscreen">Fullscreen</button>
+                </div> -->
+			</div>
+
+			<div class="minor-section">
+				<h2>Description</h2>
+				<p>The purpose of this experiment is to explore my version of alternate worlds within a digital environment.</p>
+			</div>
+
+			<div class="minor-section">
+				<h2>Technical</h2>
+				<p>his code is for a project where I had to create a grid-based world with different types of terrain and dynamic features. I used look-up tables to define the appearance of snow, ice, and chests on the grid. The generateGrid function is responsible for setting up the grid, adding rooms, hallways, and randomly placing chests. To make it more interactive, I implemented snow animations using the generateSnowAnimations function, which adds movement to the snow tiles. Then, the drawGrid function renders everything, from the background tiles to the animated snow and randomized terrain textures. I also included a function for shuffling arrays to ensure random tile placement. Overall, it was a fun assignment that allowed me to create a visually interesting and dynamic grid-based world.</p>
+			</div>
+
+			<div class="minor-section">
+				<h2>Reflection</h2>
+				<p> I did all the work of the project by myself, I did have the aid of some online resources when looking up the library for creating my scene as well as a algorithm to shuffle my tiles. I feel that my implementation was goof and I think that the final outcome came out really well. I did want to include more of a transition like a gradient for my water and the island however I struggled to implement that so I decided to keep it simple. My high for the project was letting my tiles shuffle through the array of coordinates I created creating really cool snowing effect.</p>
+			</div>
+
+		</section>
+		<nav id="links" class="minor-section">
+			<!-- Put link back to homepage here. -->
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+            </ul>
+		</nav>
+	</main>
+</body>
+</html>
